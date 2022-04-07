@@ -45,10 +45,28 @@ var getCoords = function (city) {
                         console.log(long);
                         cityNameEl.textContent = data[0].name + " " + today;
                         getCurrentWeather(lat, long);
+
                         var prevSearch = document.createElement("button")
                         prevSearch.textContent = data[0].name;
                         prevSearch.classList = "cityBtn btn btn-secondary d-block m-2"
                         inputWrapperEl.append(prevSearch);
+
+
+                        if (prevSearch.textContent = data[0].name) {
+                            console.log("if")
+                            return;
+
+                        }
+                        else {
+                            console.log("else")
+
+
+                            return;
+
+                        }
+
+
+
                     }
                     //Catches errors for invalid city and prompts the user to try again
                     catch {
@@ -148,6 +166,7 @@ var cityButtonListener = function () {
             console.log(event.target.textContent)
             cityNameEl.textContent = (event.target.textContent + today);
             getCoords(event.target.textContent)
+
 
         }
     }
