@@ -1,0 +1,47 @@
+hr {
+    background-color: black;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.weather-display {
+    border: 1px solid black;
+}
+
+h1 {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 100%, rgba(9, 9, 121, 1) 42%);
+    color: white;
+}
+
+button,
+input {
+    width: 100%
+}
+
+.five-day-card {
+    background-color: #57718a;
+    color: white;
+}
+
+span {
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+.favorable {
+    background-color: green;
+}
+
+.moderate {
+    background-color: orange;
+}
+
+.severe {
+    background-color: red;
+}
+
+#search-header {
+    font-size: 25px;
+}

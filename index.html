@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel='stylesheet' href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <h1 class="text-center">Weather Dashboard</h1>
+    <div class="main-wrapper row width-80">
+        <div class="col-2">
+            <h2 class="m-2" id="search-header">Search for a city: </h2>
+            <div class="input-wrapper">
+                <input class="d-block m-2" type=text id="city-search" name="city-search" placeholder="Enter a city">
+                <button class="btn btn-primary d-block m-2" id="submitBtn">Submit </button>
+                <hr class="m-2">
+                <!--Search History Buttons Will Generate Here-->
+            </div>
+        </div>
+        <div class="weather-wrapper col-8">
+            <div class="weather-display" id="weather-display">
+                <h2 class="m-2" id="city-name"></h2>
+                <p class="m-2" id="temp">Temp: </p>
+                <p class="m-2" id="wind">Wind: </p>
+                <p class="m-2" id="humidity">Humidity: </p>
+                <div class="m-2" id="uv">UV Index: </div>
+            </div>
+            <h3 class="m-2 width-100 d-block">5 Day Forecast: </h3>
+            <div class="five-day-container row" id="five-day-container">
+
+                <!--Generate 5 day forecast here-->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/script.js"></script>
+
+</html>
