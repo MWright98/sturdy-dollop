@@ -30,7 +30,7 @@ var getCityName = function () {
 //function to get latitude and longitude of searched city
 var getCoords = function (city) {
 
-    var apiUrl = 'http://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=5&appid=' + apiKey
+    var apiUrl = 'https://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=5&appid=' + apiKey
 
     fetch(apiUrl).then(function (response) {
 
